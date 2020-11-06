@@ -13,7 +13,7 @@ public class CarController {
     private CarService carService;
 
     @PostMapping("/create")
-    public String addCar(@RequestParam String title, @RequestParam String type, @RequestParam double power) {
+    public String addCar(@RequestParam(name = "title",required = false) String title, @RequestParam(name = "type",required = false) String type, @RequestParam(name = "power",required = false) String power) {
         Car car = new Car();
         car.setTitle(title);
         car.setType(type);

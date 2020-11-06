@@ -26,10 +26,10 @@ public class Car {
     private String type;
 
     @Column
-    private double power;
+    private String power;
 
 
-    public Car(String title, String type, double power) {
+    public Car(String title, String type, String power) {
         this.title = title;
         this.type = type;
         this.power = power;
